@@ -1,0 +1,247 @@
+2017-06-06 17:15:02 Register auth timeout (127.0.0.1). See http://wiki.workerman.net/Error4 for detail
+2017-06-06 17:16:36 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-06 17:16:36 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-06 17:17:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-06 17:17:27 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-06 17:18:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-06 17:18:45 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 11:18:28 exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'simplegw'' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=si...', 'root', '123456789', Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct('127.0.0.1', '3306', 'root', '123456789', 'simpleGW')
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 11:22:22 exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'simplegw'' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=si...', 'root', '123456789', Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct('127.0.0.1', '3306', 'root', '123456789', 'simpleGW')
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 11:23:38 exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(51): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 11:25:30 exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #30)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 16:05:59 exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 16:07:21 exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 16:08:28 exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 16:12:00 exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1709): PDO->__construct('mysql:dbname=;h...', NULL, NULL, Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\mysql\Connection.php(1695): Workerman\MySQL\Connection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(50): Workerman\MySQL\Connection->__construct(NULL, NULL, NULL, NULL, NULL)
+#3 [internal function]: Events::onConnect('7f0000010b54000...')
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(364): call_user_func('Events::onConne...', '7f0000010b54000...')
+#5 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#14 {main}
+2017-06-07 16:42:13 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2017-06-07 16:42:14 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2017-06-07 16:42:15 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2017-06-07 16:42:16 Gateway: Worker->name conflict. Key:127.0.0.1:YourAppBusinessWorker:0
+2017-06-07 17:44:38 exception 'Exception' with message '\Config\Db::getest not set
+' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\Db.php:42
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(69): GatewayWorker\Lib\Db::instance('getest')
+#1 [internal function]: Events::onMessage('7f0000010b54000...', '1')
+#2 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f0000010b54000...', '1')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#7 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2017-06-07 17:44:38 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 17:44:38 SendBufferToWorker fail. The connections between Gateway and BusinessWorker are not ready. See http://wiki.workerman.net/Error3 for detail
+2017-06-07 17:45:23 exception 'Exception' with message '\Config\Db::getest not set
+' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\Db.php:42
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(69): GatewayWorker\Lib\Db::instance('getest')
+#1 [internal function]: Events::onMessage('7f0000010b54000...', '1')
+#2 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f0000010b54000...', '1')
+#3 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#6 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#7 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#12 {main}
+2017-06-07 17:46:18 exception 'Exception' with message 'type empty' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php:1534
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php(1815): GatewayWorker\Lib\DbConnection->build()
+#1 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(69): GatewayWorker\Lib\DbConnection->query()
+#2 [internal function]: Events::onMessage('7f0000010b54000...', '1')
+#3 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f0000010b54000...', '1')
+#4 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#7 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2017-06-07 17:46:51 exception 'PDOException' with message 'SQLSTATE[HY000] [1102] Incorrect database name 'gwtest '' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php:1709
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php(1709): PDO->__construct('mysql:dbname=gw...', 'root', '123456789', Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php(1695): GatewayWorker\Lib\DbConnection->connect()
+#2 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\Db.php(48): GatewayWorker\Lib\DbConnection->__construct('127.0.0.1', '3306', 'root', '123456789', 'gwtest ')
+#3 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(69): GatewayWorker\Lib\Db::instance('user')
+#4 [internal function]: Events::onMessage('7f0000010b54000...', '1')
+#5 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f0000010b54000...', '1')
+#6 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#7 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#8 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#13 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#14 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#15 {main}
+2017-06-07 17:47:49 exception 'Exception' with message 'type empty' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php:1534
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php(1815): GatewayWorker\Lib\DbConnection->build()
+#1 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(69): GatewayWorker\Lib\DbConnection->query()
+#2 [internal function]: Events::onMessage('7f0000010b54000...', '1')
+#3 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f0000010b54000...', '1')
+#4 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#7 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
+2017-06-07 17:49:33 exception 'PDOException' with message 'SQL:INSERT INTO `gwtest` ( `title`,`client_id`) VALUES ( :title,:client_id) SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gwtest.gwtest' doesn't exist' in D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php:1766
+Stack trace:
+#0 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\Lib\DbConnection.php(1824): GatewayWorker\Lib\DbConnection->execute('INSERT INTO `gw...', Array)
+#1 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\Events.php(69): GatewayWorker\Lib\DbConnection->query()
+#2 [internal function]: Events::onMessage('7f0000010b54000...', 'a')
+#3 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(369): call_user_func('Events::onMessa...', '7f0000010b54000...', 'a')
+#4 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#5 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Connection\TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #29)
+#7 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Events\Select.php(283): call_user_func_array(Array, Array)
+#8 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(808): Workerman\Events\Select->loop()
+#9 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\gateway-worker-for-win\src\BusinessWorker.php(183): Workerman\Worker->run()
+#10 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(457): GatewayWorker\BusinessWorker->run()
+#11 D:\AppServ\www\simpleGW\GatewayWorker\vendor\workerman\workerman-for-win\Worker.php(366): Workerman\Worker::runAllWorkers()
+#12 D:\AppServ\www\simpleGW\GatewayWorker\Applications\YourApp\start_businessworker.php(35): Workerman\Worker::runAll()
+#13 {main}
