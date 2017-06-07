@@ -1,5 +1,8 @@
 <?php
-//引入文件
+/**
+ *引入文件
+ */
+
 require_once __DIR__ . '/../../vendor/autoload.php';
 require_once __DIR__.'/config/Db.php';
 
