@@ -41,11 +41,8 @@ class Events
      */
     public static function onConnect($client_id)
     {
-        // 向当前client_id发送数据 
-        Gateway::sendToClient($client_id, "Hello $client_id\r\n ");
-        // 向所有人发送
-//        Gateway::sendToAll("$client_id login\r\n");
-
+        // 向当前连接客户端回传链接id
+        Gateway::sendToClient($client_id, $client_id);
     }
 
     /**
@@ -57,13 +54,32 @@ class Events
     {
         // 向所有人发送 
 //        Gateway::sendToAll("$client_id said $message\r\n");
+        $db = Db::instance('simplegw');
+//        $is_register = $db->select('*')->from('connect_info')->cols(array('equipment_id' => $message))->query();
+        $type = substr($message, 25, 29);
+        switch ($type) {
+            case '0x00':
+                break;
+            case '0x01':
+                break;
+            case '0x02':
+                break;
+            case '0x03':
+                break;
+            case '0x04':
+                break;
+            case '0x05':
+                break;
+            case '0x06':
+                break;
+            case '0x07':
+                break;
+            case '0x08':
+                break;
 
-        $insert_id = Db::instance('gwtest')->insert('test')->cols(array('title' => "测试数据: $message", 'client_id' => $client_id))->query();
-        if ($insert_id > 0) {
-            Gateway::sendToClient($client_id, 'ok');
-        } else {
-            Gateway::sendToClient($client_id, 'fail');
         }
+//        $insert_id = $db->insert('test')->cols(array('title' => "测试数据: $message", 'client_id' => $client_id))->query();
+
 
     }
 
@@ -75,5 +91,6 @@ class Events
     {
         // 向所有人发送
 //        GateWay::sendToAll("$client_id logout\r\n");
+        $_SESSION['client_id'] = null;
     }
 }
