@@ -58,3 +58,4 @@ function dump($var, $echo = true, $label = null, $strict = true)
     } else
         return $output;
 }
+//测试链接GitHub是否成功
